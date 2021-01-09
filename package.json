@@ -1,5 +1,5 @@
 {
-  "name": "firebaseui",
+  "name": "@yujiro/firebaseui",
   "version": "4.7.1",
   "description": "Javascript library for customizable UI on top of Firebase SDK",
   "files": [
@@ -25,16 +25,16 @@
     "test": "npm run build && npm run generate-test-files && ./buildtools/run_tests.sh",
     "serve": "npm run build && npm run generate-test-files && gulp serve",
     "generate-test-files": "./buildtools/generate_test_files.sh",
-    "prepublish": "npm run test && cp -r dist demo/public"
+    "prepublish": "cp -r dist demo/public"
   },
   "test": "npm run test",
   "author": "Google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/firebaseui-web.git"
+    "url": "https://github.com/yujiro/firebaseui-web.git"
   },
   "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "Apache-2.0",
   "devDependencies": {
